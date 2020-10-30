@@ -125,10 +125,18 @@ module switchOnOff() {
 
 }
 
+module podlozkaDisplay() {
+    intersection() {
+        box();
+        translate([37,0,39]) cube([61,10,40]);
+
+    }
+}
+
 module display() {
     x = 45; 
     y = 45;
-    color("black") translate([x,-2,y]) rotate([0,0,0]) cube([45.5, 32, 27.7]);
+    color("green") translate([x,-2,y]) rotate([0,0,0]) cube([45.5, 32, 27.2]);
     
     a = 60;
     b = 30;
@@ -218,7 +226,6 @@ module topPanel() {
     }
 }
 
-!topPanelsMultikonektorom();
 
 module testKonektorZdroja() {
     intersection() {
@@ -227,7 +234,25 @@ module testKonektorZdroja() {
     }
 }
 
+module medzikus() {
+    // 2 hlavicka vyska, 5.6 hlavicka priemer
+    rafik2=10;
+    resize([0,0,0]) difference() {
+        outerBox();
+        translate([0,0,3]) outerBox();
+        holes(z=0, d=3.5);
+//        holes(2,5.7);
+        translate([stena+rafik2,stena+rafik2,0]) cube([sirka-2*rafik2,hlbka-2*rafik2,5]);
+    }
+}
+
+//!medzikus();
+
 //!testKonektorZdroja();
+!podlozkaDisplay();
+//!topPanelsMultikonektorom();
+//!topPanel();
+
 
 box();
 switchOnOff();

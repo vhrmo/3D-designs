@@ -1,5 +1,10 @@
 
-hrubkaVrstvy = 0.28;
+/*
+    Top - down frame holder
+ */
+
+
+hrubkaVrstvy = 0.20;
 
 sirka = 30;
 vyska = 101;
