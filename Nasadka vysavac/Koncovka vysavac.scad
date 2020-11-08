@@ -21,16 +21,25 @@ module outer_shape() {
     offset(thickness) inner_shape();
 }
 
-module obluk() {
-    rotate_extrude(angle = 60) {   
-        translate([60,0,0])
-        rotate([0,0,90])
+module obluk_form() {
+    union() {
+        translate([8,0,0]) square([2,height], center=true);
+        translate([-8-3,0,0]) square([2,height], center=true);
         difference() {
             outer_shape();
             inner_shape();
         }
     }
 }
+
+module obluk() {
+    rotate_extrude(angle = 60) {
+        translate([60,0,0])
+        rotate([0,0,90])
+            obluk_form();
+    }
+}
+
 
 
 module klin() {
@@ -181,9 +190,9 @@ module part3() {
 
 
 //body();
-part1();
+//part1();
 part2();
-part3();
+//part3();
 
 
 
