@@ -11,6 +11,7 @@ hose2 = 30;
 hoselength=40;
 hosethickness=2;
 
+$fn = 300;
 
 // base box
 module inner_shape() {
