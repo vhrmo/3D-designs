@@ -1,6 +1,6 @@
 
 /*
-    Ramik s macko
+    Ramik s mackom
  */
 
 
@@ -53,7 +53,6 @@ module macko() {
                     import("/Users/vlado/Projects/3D-designs/Macko nadacia/Macko.svg");
                 }
 }
-!macko();
 
 module baseFrame() {
     difference() {

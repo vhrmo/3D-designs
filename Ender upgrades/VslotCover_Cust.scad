@@ -1,4 +1,6 @@
 
+// Rozchod kolajnic pre dualVslotCover
+rozchodKolajnic = 20;
 
 module vslotCover(length, side_extension_width=0) {
 	/* HIDDEN */
@@ -52,4 +54,13 @@ module vslotCover(length, side_extension_width=0) {
 		}
 }
 
-vslotCover(50,20);
+module dualVslotCover(dlzka = 135) {
+	vslotCover(dlzka, rozchodKolajnic);
+	translate([rozchodKolajnic, 0, 0]) vslotCover(dlzka, 0);
+
+	//    translate([0, 0, 0]) boxKlieste();
+}
+
+dualVslotCover(40);
+
+//vslotCover(50,20);

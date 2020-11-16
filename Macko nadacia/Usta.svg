@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="299px" height="354px" viewBox="0 0 299 354" enable-background="new 0 0 299 354" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="299" height="300"/>
+	</defs>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_" overflow="visible"/>
+	</clipPath>
+
+
+	<!-- Usta -->
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="black" stroke-width="4" stroke-linecap="round" d="M157.852,183.721   c-12.902,11.533-32.123,11.693-43.789-5.484"/>
+</g>
+</svg>
