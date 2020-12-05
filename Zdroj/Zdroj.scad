@@ -246,12 +246,13 @@ module medzikus() {
     }
 }
 
-//!medzikus();
 
 //!testKonektorZdroja();
-!podlozkaDisplay();
-//!topPanelsMultikonektorom();
+//!podlozkaDisplay();
+
+translate([0,0,vyska+40]) topPanelsMultikonektorom();
 //!topPanel();
+translate([0,0,vyska+20]) medzikus();
 
 
 box();

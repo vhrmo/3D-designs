@@ -1,116 +1,43 @@
-
 /*
     Ramik s mackom
  */
 
+use <../Parts/Drziak s trnmi.scad>
 
-hrubkaVrstvy = 0.20;
+$fn = 60;
 
-sirka = 80;
-vyska = 18;
-
-hrubkaZadnaStena = 6*hrubkaVrstvy;
-hrubkaVyrezPreObrazok = 3*hrubkaVrstvy;
-hrubkaPrednaStena = 6*hrubkaVrstvy;
-hrubka = hrubkaZadnaStena+hrubkaVyrezPreObrazok+hrubkaPrednaStena;
-
-spodnaHrana = 3;
-prekrytieObrazku = 5;
-
-mackoSirka = 40;
-mackoVyska = 40;
-
-// pocet trnov na upevnenie obrazku
-pocetTrnov = 4;
-
-module macko1() {
-    translate([sirka-mackoSirka/4, prekrytieObrazku, hrubka - 3 * hrubkaVrstvy])
-        resize([mackoSirka,mackoVyska,0])
-            translate([-25,-46,0]) // umiestnenie na stred
-                import("/Users/vlado/Downloads/Macko (7).stl");
+module ramikSVG() {
+    linear_extrude(height = 2.4) {
+        translate([- 40, - 60, 0])
+            import("../Macko nadacia/Ramik.svg");
+    }
 }
 
-module macko2() {
-    translate([sirka-mackoSirka/4, prekrytieObrazku, hrubka - 3 * hrubkaVrstvy])
-        resize([mackoSirka,mackoVyska,0])
-            translate([-25,-46,0]) // umiestnenie na stred
-                    linear_extrude(height = 2) {
-                        import("/Users/vlado/Projects/3D-designs/Macko nadacia/Macko.svg");
-                    }
+module ramik() {
+    difference() {
+        ramikSVG();
+        translate([0, 0, 1.6])
+            resize([58, 0, 0], auto = [true, true, false])
+                ramikSVG();
+    }
 }
 
 module macko() {
-    translate([sirka-mackoSirka/4, prekrytieObrazku, hrubka - 3 * hrubkaVrstvy])
-//        resize([mackoSirka,mackoVyska,0])
-            translate([-25,-46,0]) // umiestnenie na stred
-                linear_extrude(height = 2) {
-                    import("/Users/vlado/Projects/3D-designs/Macko nadacia/Ramik.svg");
-                }
-    translate([sirka-mackoSirka/4, prekrytieObrazku, hrubka - 3 * hrubkaVrstvy])
-//        resize([mackoSirka,mackoVyska,0])
-            translate([-25,-46,0]) // umiestnenie na stred
-                linear_extrude(height = 3) {
-                    import("/Users/vlado/Projects/3D-designs/Macko nadacia/Macko.svg");
-                }
-}
-
-module baseFrame() {
-    difference() {
-        cube([sirka, vyska, hrubka]);
-        translate([0,prekrytieObrazku+spodnaHrana,hrubkaZadnaStena]) cube([sirka, vyska, hrubka]);
-        translate([0,spodnaHrana,hrubkaZadnaStena]) cube([sirka, vyska, hrubkaVyrezPreObrazok]);
-    }
-}
-
-$fn = 14;
-
-module trne() {
-    rozpatie = sirka / pocetTrnov;
-
-    for (i = [0:1:pocetTrnov - 1]) {
-        #translate([i * rozpatie + rozpatie / 2, spodnaHrana + 1.5, hrubkaZadnaStena]) rotate([- 90, 0, 0]) cylinder(
-        h = 3, d1 = 0.8, d2 = 0.01);
-    }
-}
-
-module spojky() {
-    #translate([sirka-10,prekrytieObrazku ,hrubka-3*hrubkaVrstvy]) cube([3,2,1]);
-    #translate([sirka-19,prekrytieObrazku ,hrubka-3*hrubkaVrstvy]) cube([2,2,1]);
-}
-
-
-module drziak() {
     union() {
-        difference() {
-            baseFrame();
-            macko();
-        }
-        trne();
-        spojky();
+        translate([- 40, 32, 1.6]) import("Macko z SVG v5.stl");
+        translate([5.2, - 7.4, 1]) sphere(4);
+        ramik();
     }
 }
 
-module mackoSVyrezom() {
-    difference() {
-        macko();
-        spojky();
-    }
-}
+//macko();
+//union() {
+//    translate([75, 5, 3])
+//        resize([45, 0, 0], auto = [true, true, false])
+//            macko();
+//}
 
-module preview() {
-    union() {
-        baseFrame();
-        trne();
-        spojky();
-        macko1();
-    }
-}
-
-//!mackoSVyrezom();
-//!drziak();
-preview();
-
-
+holder(width = 80, heightBack = 18, heightFront = 12, depth = 4, opening = 0.6, pins = 5);
 
 
 
