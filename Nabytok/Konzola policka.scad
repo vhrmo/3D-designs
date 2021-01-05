@@ -30,8 +30,17 @@ module krytka(priemer = 10, hrubka = 6, steps = 1, korekcia = 0.2) {
     }
 }
 
+module kluc_na_skrutku(p = 17.2) {
+    stena = 1.2;
+    difference() {
+        cube([8, p+2*stena, 40]);
+        translate([-1,stena,30]) cube([12, p, 30]);
+        translate([-1,stena+(p-10)/2,10]) cube([12, 10, 50]);
+    }
+}
+
 // Konzoly trčia 6.2 , 6.8, 6.8, 7.8 cm
-//konzola(steps = 0.5, hrubka = 7, ponor = 90-78);
-translate([0,0,0]) krytka(steps = 0.5, hrubka = 7, korekcia=0.2);
-translate([30,0,0]) krytka(steps = 0.5, hrubka = 7, korekcia=0.4);
-translate([60,0,0]) krytka(steps = 0.5, hrubka = 7, korekcia=0.6);
+//konzola(steps = 0.5, hrubka = 7, ponor = 90-68);
+//krytka(steps = 0.5, hrubka = 7, korekcia=0.2);
+
+kluc_na_skrutku();
