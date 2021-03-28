@@ -114,12 +114,12 @@ module krytka_kable(priemer=2.8, vyska=2.7, dlzka = 150) {
     translate([0,0,0]) cube([19, dlzka, zakladna]);
 
 
-    translate([16, 20, zakladna]) cylinder(d1 = priemer, d2=priemer-0.2, h = vyska);
-    translate([3, 20, zakladna]) cylinder(d1 = priemer, d2=priemer-0.2, h = vyska);
-    translate([16, 75, zakladna]) cylinder(d1 = priemer, d2=priemer-0.2, h = vyska);
-    translate([3, 75, zakladna]) cylinder(d1 = priemer, d2=priemer-0.2, h = vyska);
-    translate([16, 130, zakladna]) cylinder(d1 = priemer, d2=priemer-0.2, h = vyska);
-    translate([3, 130, zakladna]) cylinder(d1 = priemer, d2=priemer-0.2, h = vyska);
+    translate([16, 20, zakladna]) cylinder(d1 = priemer, d2=priemer, h = vyska);
+    translate([3, 20, zakladna]) cylinder(d1 = priemer, d2=priemer, h = vyska);
+    translate([16, 75, zakladna]) cylinder(d1 = priemer, d2=priemer, h = vyska);
+    translate([3, 75, zakladna]) cylinder(d1 = priemer, d2=priemer, h = vyska);
+    translate([16, 130, zakladna]) cylinder(d1 = priemer, d2=priemer, h = vyska);
+    translate([3, 130, zakladna]) cylinder(d1 = priemer, d2=priemer, h = vyska);
 
 }
 

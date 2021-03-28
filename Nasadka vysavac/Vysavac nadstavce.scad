@@ -1,3 +1,7 @@
+// ************************************************************************
+// Design taken from https://www.thingiverse.com/thing:439443
+// ************************************************************************
+
 // How thick should the shaft be to fit your vaccuum?
 shaft_diameter = 32; // [10:60]
 
