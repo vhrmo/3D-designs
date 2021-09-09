@@ -1,0 +1,1 @@
+Config needs to be updated via SD card! (it doesn't work through the USB stick!)
