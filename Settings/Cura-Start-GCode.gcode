@@ -1,7 +1,7 @@
 ; Ender 3 Custom Start G-code
 M104 S{material_print_temperature_layer_0}
 M140 S{material_bed_temperature_layer_0}
-M105
+M105 ; Report temperatures
 G28 ; Home all axes
 M420 S1  ; restore ABL mesh
 G1 Z10.0; Move Z Axis up to prevent from heating up too close to the bed
