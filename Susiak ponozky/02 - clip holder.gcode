@@ -1,0 +1,79 @@
+G1 F1200
+
+G1 X207.143 Y92.961 Z3.280 E0.5; move to next layer (15)
+G1 X24.468 Y92.961 E16.42248 ; perimeter
+
+G1 X24.568 Y85.735 E0.82947  ; perimeter
+G1 X25.633 Y85.735 E0.09574  ; perimeter
+G1 X25.633 Y90.837 E0.63847  ; perimeter
+G1 X206.078 Y90.837 E16.22201 ; perimeter
+G1 X206.078 Y85.735 E0.63847 ; perimeter
+G1 X207.143 Y85.735 E0.09574 ; perimeter
+
+
+G1 X207.143 Y92.793 Z3.480 E0.81451;  move to next layer (16)
+G1 X24.468 Y92.793 E16.42248 ; perimeter
+
+G1 X24.568 Y85.735 E0.82947  ; perimeter
+G1 X25.633 Y85.735 E0.09574  ; perimeter
+G1 X25.633 Y90.837 E0.63847  ; perimeter
+G1 X206.078 Y90.837 E16.22201 ; perimeter
+G1 X206.078 Y85.735 E0.63847 ; perimeter
+G1 X207.143 Y85.735 E0.09574 ; perimeter
+
+
+G1 X207.143 Y92.625 Z3.680 E0.79941; move to next layer (17)
+G1 X24.468 Y92.625 E16.42248 ; perimeter
+
+G1 X24.568 Y85.735 E0.82947  ; perimeter
+G1 X25.633 Y85.735 E0.09574  ; perimeter
+G1 X25.633 Y90.837 E0.63847  ; perimeter
+G1 X206.078 Y90.837 E16.22201 ; perimeter
+G1 X206.078 Y85.735 E0.63847 ; perimeter
+G1 X207.143 Y85.735 E0.09574 ; perimeter
+
+
+G1 X207.143 Y92.457 Z3.880 E0.78431 ; move to next layer (18)
+G1 X24.468 Y92.457 E16.42248 ; perimeter
+
+G1 X24.568 Y85.735 E0.82947  ; perimeter
+G1 X25.633 Y85.735 E0.09574  ; perimeter
+G1 X25.633 Y90.837 E0.63847  ; perimeter
+G1 X206.078 Y90.837 E16.22201 ; perimeter
+G1 X206.078 Y85.735 E0.63847 ; perimeter
+G1 X207.143 Y85.735 E0.09574 ; perimeter
+
+
+G1 X207.143 Y92.289 Z4.080 E0.13231; move to next layer (19)
+G1 X24.468 Y92.289 E16.43624 ; perimeter
+G1 X24.468 Y90.837 E0.13071 ; perimeter
+G1 X207.143 Y90.837 E16.43624 ; perimeter
+
+G1 X207.143 Y92.121 Z4.280 E0.11721 ; move to next layer (20)
+G1 X24.468 Y92.121 E16.43624 ; perimeter
+G1 X24.468 Y90.837 E0.11561 ; perimeter
+G1 X207.143 Y90.837 E16.43624 ; perimeter
+
+G1 X207.143 Y91.954 Z4.480 E0.10211 ; move to next layer (21)
+G1 X24.468 Y91.954 E16.43624 ; perimeter
+G1 X24.468 Y90.837 E0.10051 ; perimeter
+G1 X207.143 Y90.837 E16.43624 ; perimeter
+
+G1 X207.143 Y91.786 Z4.680 E0.08701; move to next layer (22)
+G1 X24.468 Y91.786 E16.43624 ; perimeter
+G1 X24.468 Y90.837 E0.08541 ; perimeter
+G1 X207.143 Y90.837 E16.43624 ; perimeter
+
+G1 X207.143 Y91.618 Z4.880 E0.07191 ; move to next layer (23)
+G1 X24.468 Y91.618 E16.43624 ; perimeter
+G1 X24.468 Y90.837 E0.07031 ; perimeter
+G1 X207.143 Y90.837 E16.43624 ; perimeter
+
+G1 X207.143 Y91.450 Z5.080  E0.05681 ; move to next layer (24)
+G1 X24.468 Y91.450 E16.43624 ; perimeter
+G1 X24.468 Y90.837 E0.05521 ; perimeter
+G1 X207.143 Y90.837 E16.43624 ; perimeter
+G1 X207.143 Y91.450  E0.04171 ; perimeter
+
+G1 X180 Y91.450 E-15; move inwards before travel
+G1 X140 Y91.450 Z15; move inwards before travel
