@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-OUT="susiak_ponozky_nozzle1_layer0.28_230C_PETG.gcode"
+OUT="target/Susiak_ponozky_nozzle1_layer0.28_230C_PETG.gcode"
 
 echo Generating GCODE
 
