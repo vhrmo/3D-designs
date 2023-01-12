@@ -12,66 +12,75 @@ G1 E-5.00000 F3600.000
 G1 Z0.240 F9000.000
 ;AFTER_LAYER_CHANGE
 ;0.24
-G1 X26.192 Y26.342
 G1 E5.00000 F2400.000
 M204 S500
 ;TYPE:Skirt
 ;WIDTH:0.3375
 G1 F1200.000
-G1 X27.898 Y25.265 E0.05757
-G1 X29.781 Y24.541 E0.05757
-G1 X31.769 Y24.199 E0.05757
-G1 X73.892 Y24.182 E1.20205
-G1 X75.712 Y24.345 E0.05216
-G1 X77.483 Y24.830 E0.05239
-G1 X79.139 Y25.623 E0.05239
-G1 X80.622 Y26.692 E0.05216
-G1 X81.897 Y28.012 E0.05239
-G1 X82.913 Y29.532 E0.05216
-G1 X83.647 Y31.214 E0.05239
-G1 X84.069 Y32.993 E0.05216
-G1 X84.175 Y34.422 E0.04089
-G1 X84.258 Y72.390 E1.08349
-G1 X84.032 Y74.076 E0.04856
-G1 X83.531 Y75.703 E0.04856
-G1 X82.768 Y77.224 E0.04856
-G1 X81.766 Y78.598 E0.04856
-G1 X81.019 Y79.375 E0.03074
-G1 X80.196 Y80.070 E0.03074
-G1 X79.304 Y80.674 E0.03074
-G1 X78.355 Y81.182 E0.03074
-G1 X77.357 Y81.588 E0.03074
-G1 X76.322 Y81.887 E0.03074
-G1 X75.262 Y82.076 E0.03074
-G1 X74.188 Y82.154 E0.03074
-G1 X32.122 Y82.170 E1.20042
-G1 X30.435 Y81.943 E0.04856
-G1 X28.817 Y81.444 E0.04833
-G1 X27.295 Y80.683 E0.04856
-G1 X25.920 Y79.680 E0.04856
-G1 X25.143 Y78.934 E0.03074
-G1 X24.453 Y78.118 E0.03051
-G1 X23.848 Y77.227 E0.03074
-G1 X23.342 Y76.285 E0.03051
-G1 X22.934 Y75.288 E0.03074
-G1 X22.635 Y74.262 E0.03051
-G1 X22.443 Y73.210 E0.03051
-G1 X22.362 Y72.136 E0.03074
-G1 X22.240 Y33.909 E1.09087
-G1 X22.469 Y32.231 E0.04833
-G1 X22.971 Y30.613 E0.04833
-G1 X23.731 Y29.100 E0.04833
-G1 X24.730 Y27.731 E0.04833
-G1 X26.160 Y26.373 E0.05628
+G1 X25.011 Y24.598 E0.05509
+G1 X26.673 Y23.632 E0.05486
+G1 X40.921 Y18.011 E0.43709
+G1 X42.688 Y17.484 E0.05262
+G1 X44.442 Y17.130 E0.05106
+G1 X46.183 Y16.946 E0.04996
+G1 X47.856 Y16.911 E0.04777
+G1 X49.607 Y17.034 E0.05008
+G1 X61.471 Y18.612 E0.34155
+G1 X78.438 Y23.078 E0.50067
+G1 X79.404 Y23.435 E0.02938
+G1 X80.329 Y23.887 E0.02938
+G1 X81.324 Y24.486 E0.03314
+G1 X82.226 Y25.171 E0.03232
+G1 X82.992 Y25.894 E0.03006
+G1 X83.686 Y26.697 E0.03029
+G1 X84.292 Y27.568 E0.03029
+G1 X84.806 Y28.497 E0.03029
+G1 X85.238 Y29.518 E0.03164
+G1 X85.557 Y30.580 E0.03164
+G1 X85.795 Y31.792 E0.03525
+G1 X85.892 Y32.976 E0.03390
+G1 X85.861 Y74.286 E1.17886
+G1 X85.649 Y75.639 E0.03909
+G1 X85.260 Y76.953 E0.03909
+G1 X84.703 Y78.195 E0.03886
+G1 X83.974 Y79.378 E0.03965
+G1 X83.156 Y80.417 E0.03773
+G1 X82.212 Y81.343 E0.03773
+G1 X81.157 Y82.140 E0.03773
+G1 X80.008 Y82.795 E0.03773
+G1 X78.972 Y83.232 E0.03209
+G1 X77.894 Y83.553 E0.03209
+G1 X76.646 Y83.789 E0.03624
+G1 X75.486 Y83.879 E0.03322
+G1 X30.275 Y83.855 E1.29016
+G1 X28.921 Y83.652 E0.03909
+G1 X27.613 Y83.274 E0.03886
+G1 X26.394 Y82.740 E0.03796
+G1 X25.143 Y81.996 E0.04155
+G1 X24.094 Y81.177 E0.03796
+G1 X23.160 Y80.230 E0.03796
+G1 X22.356 Y79.171 E0.03796
+G1 X21.692 Y78.009 E0.03819
+G1 X21.210 Y76.846 E0.03593
+G1 X20.864 Y75.606 E0.03673
+G1 X20.666 Y74.475 E0.03277
+G1 X20.594 Y73.321 E0.03299
+G1 X20.597 Y32.981 E1.15116
+G1 X20.825 Y31.009 E0.05666
+G1 X21.425 Y29.124 E0.05644
+G1 X22.373 Y27.351 E0.05737
+G1 X23.524 Y25.898 E0.05290
 G1 E-3.50000 F3600.000
 ;WIPE_START
 G1 F7200.000
-G1 X27.898 Y25.265 E-0.97916
-G1 X28.774 Y24.928 E-0.44584
+G1 X25.011 Y24.598 E-0.93799
+G1 X25.897 Y24.083 E-0.48701
 ;WIPE_END
 G1 E-0.07500 F3600.000
-G1 X26.160 Y26.373 F9000.000
-G1 X26.160 Y26.373
+G1 X23.524 Y25.898 F9000.000
+G1 X23.524 Y25.898
+; skirt end
+
 G1 X33.183 Y35.065
 G1 E5.00000 F2400.000
 ;TYPE:Perimeter
@@ -1377,280 +1386,21 @@ G1 X33.990 Y70.971 E0.00668
 G1 X33.597 Y70.579 E0.01189
 G1 X33.535 Y70.880 E0.00659
 G1 X33.782 Y71.128 E0.00749
-G1 E-3.50000 F3600.000
-;WIPE_START
-G1 F7200.000;_WIPE
-G1 X33.535 Y70.880 E-0.16619
-G1 F7200.000;_WIPE
-G1 X33.597 Y70.579 E-0.14633
-G1 F7200.000;_WIPE
-G1 X33.990 Y70.971 E-0.26394
-G1 F7200.000;_WIPE
-G1 X34.297 Y70.915 E-0.14834
-G1 F7200.000;_WIPE
-G1 X33.660 Y70.277 E-0.42837
-G1 F7200.000;_WIPE
-G1 X33.722 Y69.975 E-0.14633
-G1 F7200.000;_WIPE
-G1 X33.909 Y70.162 E-0.12550
-;WIPE_END
-G1 E-0.07500 F3600.000
-M107
-;TYPE:Custom
-; Filament-specific end gcode 
-;END gcode for filament
-G91         ; Relative Positioning
-G0 X10 Z10  ; Move head 10mm up
-G1 X5 Y170 F9000 ; present print
-M140 S0 ; turn off heatbed
-M104 S0 ; turn off temperature
-M107    ; Fan off
-M18     ; disable motors
-G90     ; Absolute Positioning
-; filament used [mm] = 345.91
-; filament used [cm3] = 0.83
-; filament used [g] = 1.03
-; filament cost = 0.01
-; total filament used [g] = 1.03
-; total filament cost = 0.01
-; estimated printing time (normal mode) = 9m 12s
 
-; avoid_crossing_perimeters = 1
-; avoid_crossing_perimeters_max_detour = 0
-; bed_custom_model = 
-; bed_custom_texture = 
-; bed_shape = 3x3,228x3,228x228,3x228
-; bed_temperature = 60
-; before_layer_gcode = ;BEFORE_LAYER_CHANGE\nG92 E0\n;[layer_z]\n\n
-; between_objects_gcode = 
-; bottom_fill_pattern = monotonic
-; bottom_solid_layers = 2
-; bottom_solid_min_thickness = 0
-; bridge_acceleration = 250
-; bridge_angle = 0
-; bridge_fan_speed = 100
-; bridge_flow_ratio = 0.95
-; bridge_speed = 25
-; brim_width = 0
-; clip_multipart_objects = 1
-; color_change_gcode = M600
-; compatible_printers_condition_cummulative = printer_model=~/(ENDER|CR|SERMOON).*/;printer_notes=~/.*PRINTER_VENDOR_CREALITY.*/
-; complete_objects = 0
-; cooling = 1
-; cooling_tube_length = 5
-; cooling_tube_retraction = 91.5
-; default_acceleration = 500
-; default_filament_profile = "Generic PLA @CREALITY"
-; default_print_profile = 0.16mm OPTIMAL @CREALITY
-; deretract_speed = 40
-; disable_fan_first_layers = 1
-; dont_support_bridges = 1
-; draft_shield = 0
-; duplicate_distance = 6
-; elefant_foot_compensation = 0.1
-; end_filament_gcode = "; Filament-specific end gcode \n;END gcode for filament\n"
-; end_gcode = G91         ; Relative Positioning\nG0 X10 Z10  ; Move head 10mm up\nG1 X5 Y170 F{travel_speed*60} ; present print\nM140 S0 ; turn off heatbed\nM104 S0 ; turn off temperature\nM107    ; Fan off\nM18     ; disable motors\nG90     ; Absolute Positioning\n
-; ensure_vertical_shell_thickness = 1
-; external_perimeter_extrusion_width = 0
-; external_perimeter_speed = 25
-; external_perimeters_first = 0
-; extra_loading_move = -2
-; extra_perimeters = 0
-; extruder_clearance_height = 0
-; extruder_clearance_radius = 0
-; extruder_colour = #FFFF00
-; extruder_offset = 0x0
-; extrusion_axis = E
-; extrusion_multiplier = 1
-; extrusion_width = 0
-; fan_always_on = 1
-; fan_below_layer_time = 100
-; filament_colour = #191919
-; filament_cooling_final_speed = 3.4
-; filament_cooling_initial_speed = 2.2
-; filament_cooling_moves = 4
-; filament_cost = 9
-; filament_density = 1.24
-; filament_diameter = 1.75
-; filament_load_time = 0
-; filament_loading_speed = 28
-; filament_loading_speed_start = 3
-; filament_max_volumetric_speed = 15
-; filament_minimal_purge_on_wipe_tower = 15
-; filament_notes = ""
-; filament_ramming_parameters = "120 100 6.6 6.8 7.2 7.6 7.9 8.2 8.7 9.4 9.9 10.0| 0.05 6.6 0.45 6.8 0.95 7.8 1.45 8.3 1.95 9.7 2.45 10 2.95 7.6 3.45 7.6 3.95 7.6 4.45 7.6 4.95 7.6"
-; filament_settings_id = "GST3D Silver PLA"
-; filament_soluble = 0
-; filament_spool_weight = 0
-; filament_toolchange_delay = 0
-; filament_type = PLA
-; filament_unload_time = 0
-; filament_unloading_speed = 90
-; filament_unloading_speed_start = 100
-; filament_vendor = Generic
-; fill_angle = 45
-; fill_density = 40%
-; fill_pattern = grid
-; first_layer_acceleration = 0
-; first_layer_bed_temperature = 70
-; first_layer_extrusion_width = 0
-; first_layer_height = 0.24
-; first_layer_speed = 20
-; first_layer_temperature = 220
-; full_fan_speed_layer = 0
-; gap_fill_speed = 30
-; gcode_comments = 0
-; gcode_flavor = marlin
-; gcode_label_objects = 0
-; high_current_on_filament_swap = 0
-; host_type = octoprint
-; infill_acceleration = 0
-; infill_anchor = 600%
-; infill_anchor_max = 50
-; infill_every_layers = 1
-; infill_extruder = 1
-; infill_extrusion_width = 0
-; infill_first = 0
-; infill_only_where_needed = 0
-; infill_overlap = 25%
-; infill_speed = 50
-; inherits_cummulative = "0.20mm NORMAL @CREALITY";"Generic PLA @CREALITY";"Creality Ender-3"
-; interface_shells = 0
-; ironing = 0
-; ironing_flowrate = 15%
-; ironing_spacing = 0.1
-; ironing_speed = 15
-; ironing_type = top
-; layer_gcode = ;AFTER_LAYER_CHANGE\n;[layer_z]
-; layer_height = 0.2
-; machine_limits_usage = emit_to_gcode
-; machine_max_acceleration_e = 5000
-; machine_max_acceleration_extruding = 500
-; machine_max_acceleration_retracting = 1000
-; machine_max_acceleration_x = 500
-; machine_max_acceleration_y = 500
-; machine_max_acceleration_z = 100
-; machine_max_feedrate_e = 60
-; machine_max_feedrate_x = 500
-; machine_max_feedrate_y = 500
-; machine_max_feedrate_z = 10
-; machine_max_jerk_e = 5
-; machine_max_jerk_x = 8
-; machine_max_jerk_y = 8
-; machine_max_jerk_z = 0.4
-; machine_min_extruding_rate = 0
-; machine_min_travel_rate = 0
-; max_fan_speed = 100
-; max_layer_height = 0.28
-; max_print_height = 250
-; max_print_speed = 100
-; max_volumetric_speed = 0
-; min_fan_speed = 100
-; min_layer_height = 0.08
-; min_print_speed = 15
-; min_skirt_length = 4
-; notes = 
-; nozzle_diameter = 0.3
-; only_retract_when_crossing_perimeters = 0
-; ooze_prevention = 0
-; output_filename_format = {input_filename_base}_{print_time}_nozzle{nozzle_diameter[0]}_layer{layer_height}mm_{temperature[0]}C_{filament_type[0]}.gcode
-; overhangs = 0
-; parking_pos_retraction = 92
-; pause_print_gcode = 
-; perimeter_acceleration = 0
-; perimeter_extruder = 1
-; perimeter_extrusion_width = 0
-; perimeter_speed = 40
-; perimeters = 1
-; physical_printer_settings_id = 
-; post_process = 
-; print_settings_id = Macko
-; printer_model = ENDER3
-; printer_notes = Don't remove the following keywords! These keywords are used in the "compatible printer" condition of the print and filament profiles to link the particular print and filament profiles to this printer profile.\nPRINTER_VENDOR_CREALITY\nPRINTER_MODEL_ENDER3\nPRINTER_HAS_BOWDEN
-; printer_settings_id = Creality Ender-3 - nozzle 0.3
-; printer_technology = FFF
-; printer_variant = 0.4
-; printer_vendor = 
-; raft_layers = 0
-; remaining_times = 0
-; resolution = 0
-; retract_before_travel = 2
-; retract_before_wipe = 70%
-; retract_layer_change = 1
-; retract_length = 5
-; retract_length_toolchange = 1
-; retract_lift = 0
-; retract_lift_above = 0
-; retract_lift_below = 0
-; retract_restart_extra = 0
-; retract_restart_extra_toolchange = 0
-; retract_speed = 60
-; seam_position = aligned
-; silent_mode = 0
-; single_extruder_multi_material = 0
-; single_extruder_multi_material_priming = 0
-; skirt_distance = 10
-; skirt_height = 1
-; skirts = 1
-; slice_closing_radius = 0.049
-; slowdown_below_layer_time = 20
-; small_perimeter_speed = 25
-; solid_infill_below_area = 0
-; solid_infill_every_layers = 0
-; solid_infill_extruder = 1
-; solid_infill_extrusion_width = 0
-; solid_infill_speed = 40
-; spiral_vase = 0
-; standby_temperature_delta = -5
-; start_filament_gcode = "; Filament gcode\n"
-; start_gcode = G90 ; use absolute coordinates\nM83 ; extruder relative mode\nM104 S[first_layer_temperature] ; set extruder temp\nM140 S[first_layer_bed_temperature] ; set bed temp\nG28 ; home all\nM420 S1  ; restore ABL mesh\nG1 Z10.0; Move Z Axis up to prevent from heating up too close to the bed\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S[first_layer_temperature] ; wait for extruder temp\n\n; Purge line at the side of the print bed\nG1 X2 Y10 F3000\nG1 Z0.16 F240\nG92 E0\nG1 Y190 E15 F1500 ; intro line\nG1 X2.3 F5000\nG92 E0\nG1 Y10 E15 F1200 ; intro line\nG92 E0\n
-; support_material = 0
-; support_material_angle = 0
-; support_material_auto = 1
-; support_material_buildplate_only = 0
-; support_material_contact_distance = 0.15
-; support_material_enforce_layers = 0
-; support_material_extruder = 0
-; support_material_extrusion_width = 0.38
-; support_material_interface_contact_loops = 0
-; support_material_interface_extruder = 0
-; support_material_interface_layers = 2
-; support_material_interface_spacing = 0.2
-; support_material_interface_speed = 100%
-; support_material_pattern = rectilinear
-; support_material_spacing = 2
-; support_material_speed = 40
-; support_material_synchronize_layers = 0
-; support_material_threshold = 40
-; support_material_with_sheath = 0
-; support_material_xy_spacing = 60%
-; temperature = 220
-; template_custom_gcode = 
-; thin_walls = 0
-; threads = 8
-; thumbnails = 
-; toolchange_gcode = 
-; top_fill_pattern = monotonic
-; top_infill_extrusion_width = 0
-; top_solid_infill_speed = 30
-; top_solid_layers = 2
-; top_solid_min_thickness = 0
-; travel_speed = 150
-; use_firmware_retraction = 0
-; use_relative_e_distances = 1
-; use_volumetric_e = 0
-; variable_layer_height = 1
-; wipe = 1
-; wipe_into_infill = 0
-; wipe_into_objects = 0
-; wipe_tower = 0
-; wipe_tower_bridging = 10
-; wipe_tower_no_sparse_layers = 0
-; wipe_tower_rotation_angle = 0
-; wipe_tower_width = 60
-; wipe_tower_x = 170
-; wipe_tower_y = 140
-; wiping_volumes_extruders = 70,70
-; wiping_volumes_matrix = 0
-; xy_size_compensation = 0
-; z_offset = 0
+
+G1 X32.861 Y71.686
+G1 X34.422 Y64.126
+G1 X35.330 Y57.388
+G1 X35.432 Y54.171
+G1 X35.045 Y49.365
+G1 X33.697 Y40.138 E-5
+G1 X32.746 Y34.814
+G1 X32.838 Y34.687
+
+G1 X45.260 Y35.580 E-5
+G1 X51.459 Y35.870
+G1 X58.092 Y35.768 Z2
+G1 X80 Y25
+
+
+
