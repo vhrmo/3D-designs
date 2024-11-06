@@ -12,5 +12,5 @@ for file in *.gcode; do
         continue
     fi
     echo $file
-    ./ArcWelder $file "$(basename $file '.gcode')_arc.gcode" --allow-3d-arcs -r=0.6 -g
+    ./ArcWelder $file "$(basename $file '.gcode')_arc.gcode" --allow-3d-arcs -r=0.1 -g
 done
