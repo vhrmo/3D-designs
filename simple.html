@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="./node_modules/three/build/three.min.js"></script>
+<!--    <script src="./node_modules/three/examples/jsm/controls/OrbitControls.js"></script>-->
+    <script src="./node_modules/gcode-preview/dist/gcode-preview.js"></script>
+
+
+</head>
+<body>
+<h1>Simple example using Fetch</h1>
+
+<canvas></canvas>
+<br><br>
+
+<script>
+    const preview = new GCodePreview.init({
+        canvas: document.querySelector('canvas'),
+        extrusionColor: 'blue'
+    });
+
+    fetch('./gcode/lever_arm_for_clamp_6_inch.gcode')
+        .then(response => response.text())
+        .then(gcode => preview.processGCode(gcode))
+        .catch(error => console.error(error));
+
+</script>
+
+</body>
+</html>
