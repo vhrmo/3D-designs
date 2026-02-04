@@ -1,0 +1,66 @@
+[
+  {
+    "name": "12ks Pin na pradlo_1h48m_nozzle1_layer0.2mm_230C_PETG",
+    "path": "12ks Pin na pradlo_1h48m_nozzle1_layer0.2mm_230C_PETG.gcode",
+    "size": 1362143,
+    "mtime": 1639053034,
+    "meta": {
+      "nozzle_mm": 1.0,
+      "layer_height_mm": 0.2,
+      "time_seconds": 6480
+    }
+  },
+  {
+    "name": "Drziak kochlik v2_1h54m_0.28mm_200C_PLA_ENDER3BLTOUCH",
+    "path": "Drziak kochlik v2_1h54m_0.28mm_200C_PLA_ENDER3BLTOUCH.gcode",
+    "size": 1734920,
+    "mtime": 1632342394,
+    "meta": {
+      "time_seconds": 6840
+    }
+  },
+  {
+    "name": "lever_arm_for_clamp_6_inch",
+    "path": "lever_arm_for_clamp_6_inch.gcode",
+    "size": 1881177,
+    "mtime": 1612716062,
+    "meta": {
+      "layer_height_mm": 0.32,
+      "time_seconds": 5033,
+      "filament_used_m": 8.81688
+    }
+  },
+  {
+    "name": "Vase5-160_4h35m_nozzle1_layer0.2mm_220C_PLA",
+    "path": "Vase5-160_4h35m_nozzle1_layer0.2mm_220C_PLA.gcode",
+    "size": 3445533,
+    "mtime": 1641388708,
+    "meta": {
+      "nozzle_mm": 1.0,
+      "layer_height_mm": 0.2,
+      "time_seconds": 16500
+    }
+  },
+  {
+    "name": "Vase5-200_5h49m_nozzle1_layer0.2mm_220C_PLA",
+    "path": "Vase5-200_5h49m_nozzle1_layer0.2mm_220C_PLA.gcode",
+    "size": 4547628,
+    "mtime": 1641388708,
+    "meta": {
+      "nozzle_mm": 1.0,
+      "layer_height_mm": 0.2,
+      "time_seconds": 20940
+    }
+  },
+  {
+    "name": "Vase5-220_6h34m_nozzle1_layer0.2mm_220C_PLA",
+    "path": "Vase5-220_6h34m_nozzle1_layer0.2mm_220C_PLA.gcode",
+    "size": 5151525,
+    "mtime": 1641388708,
+    "meta": {
+      "nozzle_mm": 1.0,
+      "layer_height_mm": 0.2,
+      "time_seconds": 23640
+    }
+  }
+]

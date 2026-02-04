@@ -3,9 +3,8 @@
         "start": "node server.js"
     },
     "dependencies": {
+        "@material-icons/svg": "^1.0.33",
         "gcode-preview": "2.11.0",
         "three": "0.140.0"
-    },
-    "devDependencies": {
     }
 }

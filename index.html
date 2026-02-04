@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>G-code Index</title>
     <script type="importmap">
         {
             "imports": {
@@ -10,11 +12,124 @@
             }
         }
     </script>
-    <script type="module" src="./index.js"></script>
+
+    <style>
+        /* Base */
+        html { font-size: 12px; }
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            color: #0f172a; /* slate-900 */
+            background: #f8fafc; /* slate-50 */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1 {
+            font-size: 1.75rem; /* 21px at 12px base */
+            margin: 0 0 12px;
+            font-weight: 650;
+            letter-spacing: -0.01em;
+            color: #0b1220;
+        }
+
+        /* Table as a card */
+        #table-container {
+            background: #ffffff;
+            border: 1px solid #e5e7eb; /* gray-200 */
+            border-radius: 12px;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+            overflow: auto;
+        }
+        table { border-collapse: collapse; width: 100%; }
+        th, td {
+            border-bottom: 1px solid #eef2f7; /* subtle divider */
+            padding: 10px 12px;
+            text-align: left;
+            font-size: 1.1667rem; /* 14px at 12px base */
+            vertical-align: middle;
+        }
+        th {
+            background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+            position: sticky; top: 0;
+            z-index: 1;
+            color: #334155; /* slate-700 */
+            font-weight: 600;
+        }
+        tbody tr:hover { background: #f8fafc; }
+        tbody tr:nth-child(even) { background: #fafcff; }
+        .muted { color: #64748b; font-variant-numeric: tabular-nums; }
+
+        /* Buttons */
+        .btn {
+            cursor: pointer;
+            border: 1px solid #c7d2fe; /* indigo-200 */
+            background: linear-gradient(180deg, #eef2ff 0%, #e0e7ff 100%);
+            color: #1e40af; /* indigo-800 */
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 1.0833rem; /* 13px */
+            font-weight: 600;
+            transition: background 120ms ease, box-shadow 120ms ease, transform 60ms ease;
+        }
+        .btn:hover { box-shadow: 0 1px 0 rgba(30, 64, 175, 0.15); }
+        .btn:active { transform: translateY(1px); }
+
+        .icon-btn { cursor: pointer; background: none; border: none; font-size: 1.5rem; color: #475569; }
+
+        /* Allow row click through mini canvas */
+        canvas.mini-preview { pointer-events: none; }
+
+        /* Overlay dialog */
+        .overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.65); display: none; align-items: center; justify-content: center; z-index: 1000; }
+        .overlay.open { display: flex; }
+        .dialog { background: #0b1220; color: #e2e8f0; border-radius: 12px; width: min(95vw, 1100px); height: min(90vh, 800px); box-shadow: 0 16px 40px rgba(2,6,23,0.5); position: relative; display: flex; flex-direction: column; border: 1px solid #0f172a; }
+        .dialog-header { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid #0f172a; background: #0f172a; }
+        .dialog-title { font-size: 1.1667rem; margin: 0; color: #cbd5e1; }
+        .close-btn { position: relative; cursor: pointer; border: 1px solid #334155; color: #e2e8f0; background: #111827; padding: 6px 10px; border-radius: 8px; font-weight: 600; }
+        .close-btn:hover { background: #1f2937; }
+        .viewer { flex: 1; display: grid; grid-template-columns: 1fr; }
+        .viewer canvas { width: 100%; height: 100%; display: block; }
+        .controls { padding: 8px 12px; border-top: 1px solid #0f172a; display: flex; gap: 8px; background: #0b1220; align-items: center; }
+        .nowrap { white-space: nowrap; }
+
+        /* Mini previews */
+        .mini-preview { width: 140px; height: 96px; display: block; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px; }
+        @media (max-width: 640px) { .mini-preview { width: 110px; height: 76px; }}
+    </style>
+    <script type="module" src="./module.js"></script>
 </head>
 <body>
-<canvas></canvas>
+    <h1>G-code Models</h1>
+    <div id="table-container">
+        <table id="gcode-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Preview</th>
+                    <th>Size</th>
+                    <th>Modified</th>
+                    <th>Info</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
+    <div id="overlay" class="overlay" aria-hidden="true">
+        <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+            <div class="dialog-header">
+                <h2 id="dialog-title" class="dialog-title">Preview</h2>
+                <button id="close-overlay" class="close-btn" title="Close">Close</button>
+            </div>
+            <div class="viewer">
+                <canvas id="preview-canvas"></canvas>
+            </div>
+            <div class="controls">
+                <button id="recenter" class="btn">Recenter</button>
+                <span id="info" class="muted"></span>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
